@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerformanceChart">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="4dp"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        android:layout_marginVertical="4dp"
+        android:tint="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/cross"
+        android:layout_marginVertical="4dp"
+        android:tint="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrect"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+<android.support.v7.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:text="View result"
+    android:textStyle="bold"
+    android:fontFamily="casual"
+    android:id="@+id/performanceNext"
+    android:textColor="@color/colorWhite"
+    android:background="@color/colorAccent"/>
+</RelativeLayout>

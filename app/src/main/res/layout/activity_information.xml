@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get ready for Quiz"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quizTitle"
+            android:layout_gravity="center"
+            android:text="JAVA"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:id="@+id/timeLinear"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/timer"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Time: 30 minutes"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/totalTime"
+                    android:padding="8dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:id="@+id/totalQuesLinear"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/noofques"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total questions: 5"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/totalques"
+                    android:padding="8dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:id="@+id/marksLinear"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/marking"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marks per question: 5"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/marks"
+                    android:padding="8dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Instructions"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/instructions"
+            android:text="1. You need to complete the quiz in the stipulated time.
+Quiz will be auto submitted once the time limit is exhausted.\n\n2. There are 4 options for each question, to mark any of them as correct just tap the options\n\n3. All the best!"
+            android:layout_marginHorizontal="36dp"
+            android:fontFamily="casual"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+
+
+</LinearLayout>
+
+        </ScrollView>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/instructionStart"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

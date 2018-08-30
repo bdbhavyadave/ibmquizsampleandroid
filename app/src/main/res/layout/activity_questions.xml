@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Questions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/toolbarQuestion"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="8dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/speak"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/speak"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:padding="8dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:id="@+id/backwardImage"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/previous"/>
+
+            <TextView
+                android:id="@+id/count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TimerText" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:padding="8dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:id="@+id/forwardImage"
+                android:layout_marginLeft="8dp"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/next"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:padding="16dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/jumptoimage"
+                android:tint="@color/colorWhite"
+                android:textAlignment="center"
+                android:src="@drawable/list"/>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="8dp"
+                android:id="@+id/quesImage"
+                android:src="@drawable/submitbrain"/>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 1"
+                    android:textSize="20sp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="24dp"
+                    android:id="@+id/quesNumber"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/statementText"
+                    android:layout_marginHorizontal="24dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:text="statement?"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/optionAred"
+                    android:id="@+id/optionALinear"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="A"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="option1"
+                        android:padding="8dp"
+                        android:id="@+id/optionAtext"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/optionBorange"
+                    android:id="@+id/optionBlinear"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="B"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textSize="28sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="option1"
+                        android:id="@+id/optionBtext"
+                        android:padding="8dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/optionCblue"
+                    android:id="@+id/optionClinear"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="C"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="option1"
+                        android:padding="8dp"
+                        android:textSize="16sp"
+                        android:id="@+id/optionCtext"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/optionDgreen"
+                    android:id="@+id/optionDlinear"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="D"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="option1"
+                        android:padding="8dp"
+                        android:textSize="16sp"
+                        android:id="@+id/optionDtext"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

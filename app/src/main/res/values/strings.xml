@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IBM Sample Quiz</string>
+
+    <!-- Paste Speech to Text information here -->
+    <string name="speech_text_username">42b36dd8-ed84-477e-bbac-ebbecdd4f568</string>
+    <string name="speech_text_password">3HE6rYKE45tS</string>
+    <string name="speech_text_url">https://stream.watsonplatform.net/speech-to-text/api</string>
+
+    <!-- Paste Text to Speech information here -->
+    <string name="text_speech_username">328cd3d8-b28d-4d00-ac53-62277b7c2e8f</string>
+    <string name="text_speech_password">DBuRqzR6KfDz</string>
+    <string name="text_speech_url">https://stream.watsonplatform.net/text-to-speech/api</string>
+
+</resources>

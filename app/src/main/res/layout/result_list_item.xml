@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusLinear"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_border"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:fontFamily="casual"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/questionNumberResult"
+                android:paddingVertical="8dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/statementTextResult"
+                    android:fontFamily="casual"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Statement"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:text="Selected Option: A"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/correctText"
+                android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:id="@+id/statusImage"
+                android:layout_height="match_parent"
+                android:src="@drawable/cross"/>
+
+        </LinearLayout>
+</RelativeLayout>
